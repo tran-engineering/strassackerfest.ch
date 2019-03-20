@@ -19,11 +19,13 @@ module.exports = {
         rules: [
             {
                 test: /\.css$/,
-                use: ['style-loader', 'css-loader']
+                use: ['style-loader', 'css-loader'],
+                sideEffects: true
             },
             {
                 test: /\.csv$/,
-                use: ['raw-loader']
+                use: ['raw-loader'],
+                sideEffects: true
             }
         ]
     },
